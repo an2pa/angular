@@ -1,0 +1,14 @@
+<input type="text" [(ngModel)]= "name" value="Title" > 
+<input type="text" [(ngModel)]= "contactNumber"  value="Details">
+<input type="text" [(ngModel)]= "email" value="imgUrl">
+<input type="text" [(ngModel)]= "password"  value="Url">
+<button (click)="add()">Add</button>
+
+
+
+<ul>
+        <li *ngFor = "let obj of objArray; let i = index " >
+        {{obj | json}} 
+       <button (click)="delete(i)"> delete </button>
+       </li>
+</ul>
